@@ -8,6 +8,6 @@ naulatG = float(naulat*32*13.3)
 luoditG = float(luodit*13.3)
 
 kilot = int(((leviksatG+naulatG+luoditG)/1000))
-grammat = int((leviksatG+naulatG+luoditG-(kilot*1000))*1000)
+grammat = float(leviksatG+naulatG+luoditG-(kilot*1000))
 
-print("Massa käyttäen metristä järjestelmää on: "+str(kilot)+"kg, ja "+str(grammat/1000)+"g.")
+print("Massa käyttäen metristä järjestelmää on: "+str(kilot)+f"kg, ja {grammat:.2f}g.")
