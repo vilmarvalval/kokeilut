@@ -10,3 +10,5 @@ NeliRng1 = random.randint(1, 6)
 NeliRng2 = random.randint(1, 6)
 NeliRng3 = random.randint(1, 6)
 NeliRng4 = random.randint(1, 6)
+
+print("Uusi satunnainen koodi nelinumeroiseen numerolukkoosi on "+str(NeliRng1)+str(NeliRng2)+str(NeliRng3)+str(NeliRng4))
