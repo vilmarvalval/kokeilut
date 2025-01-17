@@ -16,5 +16,4 @@ for heitto in arvat:
     tulos = random.randint(1, tahkot)
     heitot.append(tulos)
 
-
 print(heitot)
