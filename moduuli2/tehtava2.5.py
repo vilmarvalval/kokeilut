@@ -7,7 +7,7 @@ leiviskatG = leiviskat*20*32*13.3
 naulatG = naulat*32*13.3
 luoditG = luodit*13.3
 
-kilot = int(((leiviskatG+naulatG+luoditG)/1000))
-grammat = float(leiviskatG+naulatG+luoditG-(kilot*1000))
+kilot = ((leiviskatG+naulatG+luoditG)//1000)
+grammat = leiviskatG+naulatG+luoditG-(kilot*1000)
 
-print("Massa käyttäen metristä järjestelmää on: "+str(kilot)+f"kg, ja {grammat:.2f}g.")
+print(f"Massa käyttäen metristä järjestelmää on: {kilot:.0f}kg, ja {grammat:.2f}g.")
