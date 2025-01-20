@@ -21,4 +21,4 @@ osoitin=0
 while osoitin < len(heitot):
     lopputulos=lopputulos+heitot[osoitin]
     osoitin=osoitin+1
-print(lopputulos)
+print(f"Yhteensä: {lopputulos}")
