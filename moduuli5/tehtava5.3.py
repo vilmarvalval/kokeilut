@@ -17,5 +17,3 @@ else:
 
 
 #Tämä tehtävä oli siitä hieman hankala että materiaalissa ei ollut mitään viittauksia siihen miten alkuluvun voi laskea.
-#Esim. Pienillä lakuluvuilla on vielä sinänsä helppo kokeilla kaikki sitä edeltävät alkuluvut mutta jos tätä jatkaa,
-# niin merkkimäärä lähtee nopeasti käsistä.
