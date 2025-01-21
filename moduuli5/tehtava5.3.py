@@ -1,5 +1,3 @@
-#oma kokeilu suorituksen keston havainnollistamiseksi + pientä kommenttien käyttämis harjoittelua
-
 print("Anna kokonaisluku: ")
 kokeiltava = int(input())
 prosentti = 0
