@@ -14,6 +14,3 @@ if kokeiltava > 1:
             print(f"Luku {kokeiltava} on alkuluku.")
 else:
     print(f"Luku {kokeiltava} ei ole alkuluku.")
-
-
-#Tämä tehtävä oli siitä hieman hankala että materiaalissa ei ollut mitään viittauksia siihen miten alkuluvun voi laskea.
