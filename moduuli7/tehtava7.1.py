@@ -1,16 +1,15 @@
-kuukaudet = ("joulukuu","tammikuu","helmikuu","maaliskuu","huhtikuu","toukokuu","kesäkuu","heinäkuu","elokuu","syyskuu","lokakuu","marraskuu")
+import math
 
-print("Anna kuukausi:")
-kuukausi = input().lower()
+vuodenajat = ("Syksy","Kesä","Kevät","Talvi")
 
-if kuukausi in kuukaudet:
-    if kuukaudet.index(kuukausi) <= 2:
-        print("Kuukausi on talvella.")
-    elif kuukaudet.index(kuukausi) <= 5:
-        print("Kuukausi on keväällä.")
-    elif kuukaudet.index(kuukausi) <= 8:
-        print("Kuukausi on kesällä.")
-    else:
-        print("Kuukausi on syksyllä.")
+print("Anna kuukauden numero:")
+kuukausi = input()
+try: int(kuukausi)
+except:
+    print("Tuo ei ole kuukauden numero")
 else:
-    print(f"Kuukausi {kuukausi} ei löytynyt kuukausista.")
+    kuukausi = math.floor((11-int(kuukausi))/3)
+    if kuukausi <=12:
+        print(vuodenajat[kuukausi])
+    else:
+        print("Antamasi numero on isompi kuin kuukausien määrä.")
