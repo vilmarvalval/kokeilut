@@ -13,7 +13,8 @@ def hae_maakoodi(koodi):
               SUM(IF(type='small_airport',1,0)),
               SUM(IF(type='medium_airport',1,0)),
               SUM(IF(type='large_airport',1,0))
-              FROM airport WHERE iso_country ='{koodi}';"""
+              FROM airport WHERE iso_country ='{koodi}';
+        """
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
