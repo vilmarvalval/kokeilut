@@ -1,13 +1,12 @@
-#Kirjoita ohjelma, joka kysyy käyttäjältä maakoodin (esimerkiksi FI)
-# ja tulostaa kyseisessä maassa olevien lentokenttien lukumäärät tyypeittäin.
-# Esimerkiksi Suomen osalta tuloksena on saatava tieto siitä,
-# että pieniä lentokenttiä on 65 kappaletta, helikopterikenttiä on 15 kappaletta jne.
-
 import mysql.connector
 
 asemat=[]
 
+#haetaan maakoodin
 def hae_maakoodi(koodi):
+    #lasketaan yhteen kaikki saman tyyppiset lentokentät,
+    # tässä pystyisi ehkä tekemään koodista jotenkin joustavampaa fiksummalla komennolla johon jotenkin saisi muuttujan.
+    # Muuttujan avulla ei tarvitsisi lisätä komentoon kaikkia tyyppejä erikseen.
     sql = f"""SELECT
               SUM(IF(type='closed',1,0)),
               SUM(IF(type='heliport',1,0)),
@@ -19,6 +18,7 @@ def hae_maakoodi(koodi):
     kursori.execute(sql)
     tulos = kursori.fetchall()
     if kursori.rowcount >0:
+        #tehdään lista numeroista, en ole vielä keksinyt miten muuten pystyisi purkamaan kyseisen joukon(?).
         for i in tulos[0]:
             asemat.append(i)
     return tulos
