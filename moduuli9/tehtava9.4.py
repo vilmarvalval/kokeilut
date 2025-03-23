@@ -25,7 +25,7 @@ class Auto:
         if self.nyky_kmh < 0:
             self.nyky_kmh = 0
     #Tämän funktion avulla auto liikkuu
-    def liiku(self, aika):
+    def kulje(self, aika):
         self.trippi_mit += float(aika)*self.nyky_kmh
 
 monta_autoa = 10 #int(input("Kuinka monta autoa haluat kisaan?: "))
@@ -44,7 +44,7 @@ while kesto > 0:
     for i in autot:
 
         i.kiihdytys(random.randint(-10, 15))
-        i.liiku(1)
+        i.kulje(1)
     kesto -= 1
 
 autot.sort(key=lambda x: x.trippi_mit, reverse=True)
