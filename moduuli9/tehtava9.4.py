@@ -28,7 +28,7 @@ class Auto:
     def liiku(self, aika):
         self.trippi_mit += float(aika)*self.nyky_kmh
 
-monta_autoa = int(input("Kuinka monta autoa haluat kisaan?: "))
+monta_autoa = 10 #int(input("Kuinka monta autoa haluat kisaan?: "))
 kesto = int(input("Kuinka monta tuntia kisa kestää?: "))
 
 i=0
